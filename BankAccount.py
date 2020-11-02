@@ -12,4 +12,14 @@ class BankAccount:
     # Deposit Method
     def deposit(self, amount):
         self.balance += amount
-        print(f"Amount Deposited: ${self.balance}")
+        print(f"Amount Deposited: ${amount}")
+
+    # Withdraw method
+    def withdraw(self, amount):
+        overdraft_fee = 10
+        if amount > self.balance:
+            self.balance -= overdraft_fee
+            print("Insufficient funds.")
+        else:
+            self.balance -= amount
+            print(f"Amount Withdrawn: ${amount}")
