@@ -8,3 +8,8 @@ class BankAccount:
         self.full_name = full_name
         self.account_number = random.randint(10000000, 99999999)
         self.balance = 0
+
+    # Deposit Method
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"Amount Deposited: ${self.balance}")
