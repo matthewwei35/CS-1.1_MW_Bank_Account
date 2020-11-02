@@ -23,3 +23,7 @@ class BankAccount:
         else:
             self.balance -= amount
             print(f"Amount Withdrawn: ${amount}")
+
+    # Get Balance Method
+    def get_balance(self):
+        print(f"Hello, your current balance is: ${self.balance}")
