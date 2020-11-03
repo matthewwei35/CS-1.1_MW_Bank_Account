@@ -33,3 +33,7 @@ class BankAccount:
         monthly_interest = 0.00083
         interest = self.balance * monthly_interest
         self.balance += interest
+
+    # Print Receipt Method
+    def print_receipt(self):
+        print(f"""{self.full_name}\nAccount No.: ****{str(self.account_number)[-4:]}\nRouting No.: {self.routing_number}\nBalance: ${round(self.balance, 2)}""")
