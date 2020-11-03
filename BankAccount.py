@@ -27,3 +27,9 @@ class BankAccount:
     # Get Balance Method
     def get_balance(self):
         print(f"Hello, your current balance is: ${round(self.balance, 2)}")
+
+    # Add Interest Method
+    def add_interest(self):
+        monthly_interest = 0.00083
+        interest = self.balance * monthly_interest
+        self.balance += interest
