@@ -26,4 +26,4 @@ class BankAccount:
 
     # Get Balance Method
     def get_balance(self):
-        print(f"Hello, your current balance is: ${self.balance}")
+        print(f"Hello, your current balance is: ${round(self.balance, 2)}")
