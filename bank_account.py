@@ -36,4 +36,42 @@ class BankAccount:
 
     # Print Receipt Method
     def print_receipt(self):
-        print(f"""{self.full_name}\nAccount No.: ****{str(self.account_number)[-4:]}\nRouting No.: {self.routing_number}\nBalance: ${round(self.balance, 2)}""")
+        print(f"""{self.full_name}
+Account No.: ****{str(self.account_number)[-4:]}
+Routing No.: {self.routing_number}
+Balance: ${round(self.balance, 2)}""")
+
+# Instantiate objects
+matthew = BankAccount("Matthew Wei")
+thomas = BankAccount("Thomas Cat")
+gerald = BankAccount("Gerald Mouse")
+
+# Matthew
+print("----------------------")
+
+matthew.deposit(10)
+matthew.withdraw(5)
+matthew.get_balance()
+matthew.add_interest()
+matthew.print_receipt()
+
+# Thomas
+print("-----------------------")
+
+thomas.deposit(20)
+thomas.withdraw(30)
+thomas.get_balance()
+thomas.add_interest()
+thomas.print_receipt()
+
+# Gerald
+print("----------------------")
+
+gerald.deposit(100)
+gerald.withdraw(99)
+gerald.get_balance()
+gerald.add_interest()
+gerald.print_receipt()
+
+# Divider
+print("----------------------")
